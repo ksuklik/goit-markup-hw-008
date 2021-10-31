@@ -743,16 +743,13 @@ body {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .company__item {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-  .company__item:nth-child(2n) {
-    margin-right: 0;
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .company__item {
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
