@@ -24,37 +24,69 @@
 
   <body>
     <!--Шапка сайта-->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container main-nav">
         <a href="./index.html" class="logo"> <span class="logo-bloe">Web</span>Studio</a>
-        <nav>
-          <ul class="site-nav link">
-            <li class="item"><a href="#" class="link current">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link activ">Портфолио</a></li>
-            <li class="item"><a href="#" class="link">Контакты</a></li>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <nav>
+            <ul class="site-nav link">
+              <li class="item"><a href="#" class="link current">Студия</a></li>
+              <li class="item"><a href="./portfolio.html" class="link activ">Портфолио</a></li>
+              <li class="item"><a href="#" class="link">Контакты</a></li>
+            </ul>
+          </nav>
+          <!-- сылка авторизации  -->
+          <ul class="auth-link">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg class="mailto">
+                  <use href="./img/sprite.svg#icon-envelope-hover"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link">
+                <svg class="phone">
+                  <use href="./img/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +380961111111
+              </a>
+            </li>
           </ul>
-        </nav> -->
-    <!-- сылка авторизации  -->
-    <!-- <ul class="auth-link">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="mailto">
-                <use href="./img/sprite.svg#icon-envelope-hover"></use>
-              </svg>
-              info@devstudio.com
-            </a>
+        </div>
+        <button type="button" class="nav-open" js-open-menu>
+            <svg class="nav-icon" width="40px" height="40px" aria-label="переключатель мобильного меню">
+              <use href="./img/sprite.svg#menu_24px" class="nav_menu"></use>
+            </svg>
+        </button>
+      </div>
+      <div clas="mobile-position">
+        <ul class="mobil-contacts_list list">
+            <li class="mobile-contacts__item">
+              <a href="tel:+380961111111" class="link mobile-contacts__link mobile-contacts__link--tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+              <a href="mailto:info@devstudio.com" class="link mobile-contacts__link">info@devstudio.com</a>
+            </li>
+        </ul>
+        
+        <ul class="mobile-socblok list">
+          <li class="mobile-socblok__item">
+            <a href="linc mobile-socblok_link">Instagram</a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="phone">
-                <use href="./img/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +380961111111
-            </a>
+          <li class="mobile-socblok__item">
+            <a href="linc mobile-socblok_link">Twitter</a>
+          </li>
+          <li class="mobile-socblok__item">
+            <a href="linc mobile-socblok_link">Facebook</a>
+          </li>
+          <li class="mobile-socblok__item">
+            <a href="linc mobile-socblok_link">Linkedin</a>
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <!-- Банер -->
     <main>
