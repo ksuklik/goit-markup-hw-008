@@ -864,22 +864,38 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer .container {
-    align-items: baseline;
+    display: flex;
   }
 }
 
 .footer__contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
   margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__contact {
     margin-left: 76px;
-    margin-bottom: 0px;
+    margin-right: 158px;
+    margin-bottom: 60;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__contact {
+    margin-right: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrapper {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    display: flex;
   }
 }
 
@@ -941,6 +957,7 @@ body {
 
 .social-footer-list {
   display: flex;
+  justify-content: center;
 }
 
 .social-footer-item {
@@ -969,10 +986,8 @@ body {
 }
 
 .connect {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 60px;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -985,16 +1000,8 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .connect {
-    margin-left: auto;
-    margin-right: 85px;
-    margin-bottom: 0px;
+    margin-right: 93px;
   }
-}
-
-.footer-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1014,11 +1021,13 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--accent-new-color);
+  text-align: center;
 }
 
-.footer-form__label {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 1200px) {
+  .footer-form__label {
+    display: flex;
+  }
 }
 
 .footer-form__label input {
@@ -1061,6 +1070,12 @@ body {
   color: #ffffff;
   font-size: 16px;
   line-height: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form .btn-title {
+    margin-top: 0;
+  }
 }
 
 .btn-icon {
