@@ -241,7 +241,7 @@ body {
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .banner {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(7, 9, 26, 0.4)), url(../img/16.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(7, 9, 26, 0.4)), url(../img/header.jpg);
   }
 }
 
@@ -1014,11 +1014,6 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--accent-new-color);
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: row;
 }
 
 .footer-form__label {
