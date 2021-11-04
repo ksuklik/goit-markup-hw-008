@@ -2,9 +2,7 @@
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right,
-   rgba(47, 48, 58, 0.4),
-    rgba(7, 9, 26, 0.4)),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(7, 9, 26, 0.4)),
     url(../img/header-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,44 +12,28 @@
   padding-top: 200px;
   padding-bottom: 200px;
 
-   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(7, 9, 26, 0.4)),
-    url(../img/header-mob-2x.jpg);
-    }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(7, 9, 26, 0.4)),
+      url(../img/header-mob-2x.jpg);
+  }
 
-    @media screen and (min-width: 768px){
-      background-image: linear-gradient(to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(7, 9, 26, 0.4)),
-    url(../img/header-tab.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(7, 9, 26, 0.4)),
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(7, 9, 26, 0.4)),
+      url(../img/header-tab.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(7, 9, 26, 0.4)),
         url(../img/header-tab-2x.jpg);
-      }
+    }
 
-      @media screen and (min-width: 1200px){
-      background-image: linear-gradient(to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(7, 9, 26, 0.4)),
-    url(../img/16.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(7, 9, 26, 0.4)),
-        url(../img/header-2x.jpg);
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(7, 9, 26, 0.4)),
+        url(../img/header.jpg);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(7, 9, 26, 0.4)),
+          url(../img/header-2x.jpg);
       }
     }
-}
+  }
 
   & .banner-subtitle {
     margin-top: 0;
