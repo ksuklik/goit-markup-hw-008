@@ -68,6 +68,7 @@ body {
 }
 
 .main-nav {
+  justify-content: space-between;
   display: flex;
   align-items: center;
 }
@@ -132,7 +133,6 @@ body {
 .site-nav {
   display: flex;
   align-items: center;
-  margin-left: 93px;
 }
 
 .site-nav .item {
@@ -180,14 +180,15 @@ body {
   opacity: 1;
 }
 
-.item :not(:last-child) {
-  margin-right: 50 px;
+@media screen and (min-width: 1200px) {
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
   .item:not(:last-child) {
     margin-bottom: 10px;
-    margin-right: 0;
   }
 }
 
@@ -228,8 +229,8 @@ body {
   }
 }
 
-.auth-link .item + .item {
-  margin-left: 50px;
+.auth-link .item + .item :last-child {
+  margin-bottom: 0;
 }
 
 .auth-link .link {
@@ -299,13 +300,17 @@ body {
   background-color: #fff;
   transform: translateX(150%);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  transition: transform 250ms;
+  transition: transform 250ms ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-menu .is-open {
+  transform: translateX(0);
 }
 
 .nav__close {
@@ -329,7 +334,8 @@ body {
   }
 }
 
-.nav__close:hover, .nav__close:focus {
+.nav__close:hover,
+.nav__close:focus {
   color: #2196f3;
   fill: currentColor;
 }
@@ -1070,9 +1076,8 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__contact {
-    margin-left: 76px;
-    margin-right: 158px;
-    margin-bottom: 60;
+    margin-left: 61px;
+    margin-right: 165px;
   }
 }
 
@@ -1111,6 +1116,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-adres {
+    align-items: flex-start;
+  }
 }
 
 .adres {
@@ -1203,8 +1214,6 @@ body {
   .footer-form {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
-    margin-top: 60px;
   }
 }
 
@@ -1217,6 +1226,12 @@ body {
   margin-bottom: 20px;
   color: var(--accent-new-color);
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__title {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1236,6 +1251,12 @@ body {
   border-radius: 4px;
   background: #2f303a;
   background-color: transparent;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__label input {
+    width: 358px;
+  }
 }
 
 .footer-form__label input::placeholder {

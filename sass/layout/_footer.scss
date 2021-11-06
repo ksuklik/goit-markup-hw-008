@@ -19,9 +19,8 @@
   text-align: center;
   margin-bottom: 60px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 76px;
-    margin-right: 158px;
-    margin-bottom: 60;
+    margin-left: 61px;
+    margin-right: 165px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
@@ -55,6 +54,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @media screen and (min-width: 1200px){
+    align-items: flex-start;
+  }
 }
 
 .adres {
@@ -139,8 +142,6 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
-    margin-top: 60px;
   }
   &__title {
     font-weight: bold;
@@ -151,6 +152,10 @@
     margin-bottom: 20px;
     color: var(--accent-new-color);
     text-align: center;
+
+    @media screen and (min-width: 1200px){
+text-align: left;
+    }
   }
 }
 
@@ -171,6 +176,10 @@ display: flex;
     border-radius: 4px;
     background: #2f303a;
     background-color: transparent;
+
+    @media screen and (min-width: 1200px){
+      width: 358px;
+    }
 
     &::placeholder {
       font-size: 16px;

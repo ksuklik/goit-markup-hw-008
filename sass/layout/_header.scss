@@ -4,6 +4,7 @@
 }
 
 .main-nav {
+  justify-content: space-between;
   display: flex;
   align-items: center;
   @media screen and (max-width: 767px) {
@@ -104,10 +105,12 @@
 }
 
 .item:not(:last-child) {
+  @media screen and (min-width: 1200px){ 
   margin-right: 50px;
+  }
 }
 
-&:not(:last-child) {
+.item:not(:last-child) {
   @media screen and (max-width: 1199px) {
     margin-bottom: 10px;
   }
